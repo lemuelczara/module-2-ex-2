@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("School Management");
@@ -17,6 +19,7 @@ public class App {
             Estudante e = new Estudante();
             e.setNumeroMatricula(i);
             e.setName("Estudante " + i);
+            e.setDataDeNascimento(LocalDate.now());
             estudantes[i] = e;
         }
         
